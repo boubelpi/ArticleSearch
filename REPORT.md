@@ -36,7 +36,7 @@ I used three categories in the spreadsheet.
 
 **Direct reference**
 
-The source directly links to the original article or quotes iti
+The source directly links to the original article or quotes it.
 
 **Discussion**
 
@@ -47,3 +47,18 @@ The source contains comments, reactions, opinions about the article, IDE, JetBra
 The source uses facts or claims from the original article in its own context and author of source comes to its conclusions.
 
 Many sources were assigned more than one category. As mentioned earlier, Reddit post can directly link to the original article and contain discussion in comments or a news article may include direct link to the original article and use its information to make a broader point about JetBrains' product direction or opinion on JetBrains' products.
+
+## Results of search
+
+I found references across a variery of platforms. The most common usage type was direct reference since many sources linked to the original article when mentioning Fleet's discontinuation. 
+
+Half of sources had usage of insights usage type. These sources used original article as the basis for their own reporting or analysis, some sources discussed impact of JetBrains' decision for developers. The most reused insights were:
+
+* Fleet being discontinued
+* Fleet will no longer be available for download from December 22, 2025
+* JetBrains directs in building IDE on agentic workflows
+* Fleet didn't find a clear enough niche alongside IntelliJ-based IDEs
+* Fleet failed in competition with VS Code
+
+Third of sources had discussion usage type. These sources not only shared announcement, but also had discussions in comments about this decision.
+

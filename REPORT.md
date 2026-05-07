@@ -29,3 +29,21 @@ After that I tried using another HF model by Facebook for classification (which 
 For manual search I used article title and some more clickbait versions of the title (like "JetBrains discontinued the IDE" or "JetBrains shuts down Fleet for AI"). I didn't use titles for searching using Miyami websearch tool, since I got too many unrelated results.
 
 I used multi-label classification approach because one source usually use article in more than one way, for example, Reddit post can directly link to the original article and contain discussion in comments.
+
+## Classification
+
+I used three categories in the spreadsheet.
+
+**Direct reference**
+
+The source directly links to the original article or quotes iti
+
+**Discussion**
+
+The source contains comments, reactions, opinions about the article, IDE, JetBrains' products or the shift toward agentic development.
+
+**Usage of insights**
+
+The source uses facts or claims from the original article in its own context and author of source comes to its conclusions.
+
+Many sources were assigned more than one category. As mentioned earlier, Reddit post can directly link to the original article and contain discussion in comments or a news article may include direct link to the original article and use its information to make a broader point about JetBrains' product direction or opinion on JetBrains' products.

@@ -8,7 +8,7 @@ This article announces that support of Fleet will be discontinued and it will be
 
 I chose specifically this article, since Fleet started as a very ambitious project that was much discussed among developers, and the discontinuation new of Fleet was one of the most important new made by JetBrains in recent months. This article should be referenced, discussed and reused outside its original context.
 
-## Methodology
+## Methodology & suggested (semi) automation approach
 
 I treated this task as a content-tracing exercise. The goal was not to find every possible mention, but to build a reproducible way to identify how the article was referenced, discussed or reused outside its original context.
 
@@ -50,7 +50,7 @@ Many sources were assigned more than one category. As mentioned earlier, Reddit 
 
 ## Results of search
 
-I found references across a variery of platforms. The most common usage type was direct reference since many sources linked to the original article when mentioning Fleet's discontinuation. 
+I found references across a variety of platforms. The most common usage type was direct reference since many sources linked to the original article when mentioning Fleet's discontinuation. 
 
 Half of sources had usage of insights usage type. These sources used original article as the basis for their own reporting or analysis, some sources discussed impact of JetBrains' decision for developers. The most reused insights were:
 
@@ -62,3 +62,18 @@ Half of sources had usage of insights usage type. These sources used original ar
 
 Third of sources had discussion usage type. These sources not only shared announcement, but also had discussions in comments about this decision.
 
+## Limitations
+
+This analysis is not exhaustive. Search results change over time, and some websites are not relevant to the original article. Also some pages could not be fetched automatically.
+
+While HF model by Facebook gets mostly relevant summary to the article, it's not perfect either and can sometimes distort the facts (for example, in some runs it named Fleet as toolbox, which is not true). That's why I got several different summaries for search queries to get more stable search results.
+
+The classification also needs manual review, since current HF model doesn't provide relevant classification.
+
+I used automation mainly for discovery and preprocessing, while final classification was done manually.
+
+## Ways to improve
+
+While I used HF models for analysis, which are free for use, using paid models could improve the approach, for example, it could get some more valued summaries of original article for search query, it could get some key claims from the article, which are also relevant for search queries. Paid model could also be used in classification purpose, but still manual review is required here to check, if the results of classification are relevant.
+
+And while Miyami websearch tool is good for the current task (especially for searching queries), it's not that good in fetching: while fetching query works for the website with the original article, many other popular websites (such as Medium) couldn't be fetched as the result of query was error. This problem is not that trivial, but could be solved by working with website-specific APIs. And in this case I would need to write websearch tool by myself or use Miyami websearch tool only for searching queries.

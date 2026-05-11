@@ -50,9 +50,9 @@ Many sources were assigned more than one category. As mentioned earlier, Reddit 
 
 ## Results of search
 
-I found references across a variety of platforms. The most common usage type was direct reference since many sources linked to the original article when mentioning Fleet's discontinuation. 
+I found references across a variety of platforms. The most common usage type was direct reference (32/42) since many sources linked to the original article when mentioning Fleet's discontinuation. 
 
-Half of sources had usage of insights usage type. These sources used original article as the basis for their own reporting or analysis, some sources discussed impact of JetBrains' decision for developers. The most reused insights were:
+More than half of sources (22/42) had usage of insights usage type. These sources used original article as the basis for their own reporting or analysis, some sources discussed impact of JetBrains' decision for developers. The most reused insights were:
 
 * Fleet being discontinued
 * Fleet will no longer be available for download from December 22, 2025
@@ -60,7 +60,7 @@ Half of sources had usage of insights usage type. These sources used original ar
 * Fleet didn't find a clear enough niche alongside IntelliJ-based IDEs
 * Fleet failed in competition with VS Code
 
-Third of sources had discussion usage type. These sources not only shared announcement, but also had discussions in comments about this decision.
+More than a quarter of the sources (11/42) had discussion usage type. These sources not only shared announcement, but also had discussions in comments about this decision.
 
 ## Limitations
 
@@ -69,6 +69,8 @@ This analysis is not exhaustive. Search results change over time, and some websi
 While HF model by Facebook gets mostly relevant summary to the article, it's not perfect either and can sometimes distort the facts (for example, in some runs it named Fleet as toolbox, which is not true). That's why I got several different summaries for search queries to get more stable search results.
 
 The classification also needs manual review, since current HF model doesn't provide relevant classification.
+
+While searching is done pretty well by Miyami websearch tool, I needed to exclude some websites, that often appeared as a result of search and that aren't connected to the original article. These exclusions are connected to the article of discontinuation of Fleet, for different articles these exclusions are likely not relevant. And still, there are some articles that aren't connected with the original one, but this number is lower than it was before I made exclusions.
 
 I used automation mainly for discovery and preprocessing, while final classification was done manually.
 

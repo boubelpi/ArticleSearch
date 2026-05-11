@@ -1,0 +1,5 @@
+httpx
+transformers
+torch
+sentencepiece
+accelerate
